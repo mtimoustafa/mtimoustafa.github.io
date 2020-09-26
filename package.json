@@ -1,0 +1,19 @@
+{
+  "name": "mtimoustafa.github.io",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^10.0.2"
+  }
+}
