@@ -1,29 +1,23 @@
-<script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
-</script>
-
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+  <div class="content-wrapper">
+    <h1>Hi! I'm Mohamed.</h1>
 
-  <Counter />
-
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+    <p>
+      I'm a software developer with a focus on accessibility. I'm a Canadian living in Utrecht, Netherlands. I like to tinker and experiment with anything - tech-related or not - and hope to have my own lush digital garden in this corner of the internet ☺️
+    </p>
+  </div>
 </main>
 
+<script>
+</script>
+
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+    background-color: #001219;
+    color: #F1F9F7;
   }
 
   main {
@@ -32,14 +26,8 @@
     margin: 0 auto;
   }
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-
   h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
+    color: #A2FDDD;
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
@@ -51,15 +39,5 @@
     max-width: 14rem;
     margin: 1rem auto;
     line-height: 1.35;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
   }
 </style>
