@@ -1,16 +1,2 @@
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
-yarn-error.log
-
-# Nuxt build
-.nuxt
-
-# Nuxt generate
-dist
-
-# Miscellaneous
-*.swp
-.DS_Store
+node_modules/*
+dist/*
