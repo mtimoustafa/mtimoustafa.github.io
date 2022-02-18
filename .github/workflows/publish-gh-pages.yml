@@ -15,8 +15,9 @@ jobs:
         with:
           node_version: '17'
 
+      - name: Pull dependencies
+        run: yarn
       - name: Build dist folder
-        run: npm run build
-
+        run: yarn build
       - name: Deploy dist to gh-pages
-        run: npm run deploy
+        run: yarn deploy
