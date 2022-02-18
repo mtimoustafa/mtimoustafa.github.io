@@ -16,7 +16,7 @@ jobs:
           node_version: '17'
 
       - name: Build dist folder
-      - run: |
+        run: |
           yarn
           yarn build
 
