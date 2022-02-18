@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,9 +15,6 @@ jobs:
         with:
           node_version: '17'
 
-      - name: Pull dependencies
-        run: yarn
-      - name: Build dist folder
-        run: yarn build
-      - name: Deploy dist to gh-pages
-        run: yarn deploy
+      - run: yarn
+      - run: yarn build
+      - run: yarn deploy
