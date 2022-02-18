@@ -17,4 +17,7 @@ jobs:
 
       - run: yarn
       - run: yarn build
-      - run: yarn deploy
+      - run: |
+          git add dist/*
+          git commit -m "Automated publish"
+          git push -f git@github.com:mtimoustafa/mtimoustafa.github.io.git gh-pages
