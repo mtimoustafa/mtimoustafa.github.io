@@ -1,6 +1,6 @@
 <main class="container mx-auto h-screen text-white-500">
   <div class="flex justify-center items-start space-x-16 py-36">
-    <img src="https://s.gravatar.com/avatar/de0de92608032415a6880c65732ebc7d?s=300" class="rounded-full" />
+    <img src="/headshot.png" alt="Mohamed standing in a park, smiling" class="rounded-full" />
 
     <div class="max-w-md space-y-4">
       <h1 class="text-5xl font-bold text-sky-500">Hi! I'm Mohamed,</h1>
