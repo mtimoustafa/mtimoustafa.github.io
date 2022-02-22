@@ -1,7 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Source Sans Pro"', ...defaultTheme.fontFamily.sans],
+      },
+    },
     colors: {
       'sky': {
         500: '#A2FDDD',
