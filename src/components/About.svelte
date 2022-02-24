@@ -11,7 +11,7 @@
 <div class="text-lg max-w-md space-y-4">
   <h1 class="text-3xl sm:text-4xl font-bold text-sky-500">Hi! I'm Mohamed,</h1>
 
-  <p>an Egyptian-born Canadian living in the Netherlands.</p>
+  <p>a Canadian living in the Netherlands.</p>
 
   <p>I work as a full-stack software developer, with a focus on building accessible and delightfully usable applications. At heart, I love tinkering and experimenting with things, and creating something that makes the world a better place.</p>
 
@@ -38,7 +38,7 @@
 </div>
 
 <script>
-  let places = [
+  const places = [
     { name: 'Polywork', link: 'https://www.polywork.com/fairewinds' },
     { name: 'Twitter', link: 'https://twitter.com/mtimoustafa' },
     { name: 'Github', link: 'https://github.com/mtimoustafa' },
