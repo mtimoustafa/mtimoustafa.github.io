@@ -9,7 +9,7 @@
 </picture>
 
 <div class="text-lg max-w-md space-y-4">
-  <h1 class="text-3xl sm:text-4xl font-bold text-sky-500">Hi! I'm Mohamed,</h1>
+  <h1 class="text-3xl sm:text-4xl font-bold text-coral">Hi! I'm Mohamed,</h1>
 
   <p>a Canadian living in the Netherlands.</p>
 
@@ -28,7 +28,14 @@
           href="{ place.link }"
           target="_blank"
           rel="noreferrer noopener nofollow"
-          class="text-sky-500 hover:text-white-500"
+          class="
+            text-coral
+            hover:text-sky-50
+            hover:underline
+            focus:text-sky-50
+            focus:underline
+            active:text-slate-500
+          "
         >
           { place.name }
         </a>

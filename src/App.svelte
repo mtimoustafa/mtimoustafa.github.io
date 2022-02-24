@@ -20,7 +20,7 @@
     md:space-y-0
     md:space-x-16
 
-    text-white-500
+    text-sky-50
   "
 >
   <About />
@@ -28,12 +28,12 @@
 
 <script>
   import About from './components/About.svelte'
+
+  // <body> style must be added dynamically to index.html
+  // for Tailwind to pick it up
+  document.body.classList.add('bg-midnight')
 </script>
 
 <style>
   @import './main.css';
-
-  :root {
-    background-color: #001219;
-  }
 </style>

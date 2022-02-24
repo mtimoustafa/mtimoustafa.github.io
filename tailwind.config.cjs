@@ -7,13 +7,9 @@ module.exports = {
       fontFamily: {
         sans: ['"Source Sans Pro"', ...defaultTheme.fontFamily.sans],
       },
-    },
-    colors: {
-      'sky': {
-        500: '#A2FDDD',
-      },
-      'white': {
-        500: '#F1F9F7',
+      colors: {
+        'coral': '#a2fddd',
+        'midnight': '#001219',
       },
     },
   },
