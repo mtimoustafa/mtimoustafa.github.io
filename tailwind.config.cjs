@@ -1,15 +1,19 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: [
+    './index.html',
+    './src/**/*.{html,js,svelte,ts}',
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Source Sans Pro"', ...defaultTheme.fontFamily.sans],
+        cursive: ['"Sansita Swashed"', 'cursive', ...defaultTheme.fontFamily.serif],
+        sans: ['"Signika Negative"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'coral': '#a2fddd',
-        'midnight': '#001219',
+        'f-blue-100': '#a8f9ff',
+        'f-blue-300': '#5cf4ff',
       },
     },
   },

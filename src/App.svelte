@@ -21,6 +21,7 @@
     md:space-x-16
 
     text-sky-50
+    font-light
   "
 >
   <About />
@@ -28,10 +29,6 @@
 
 <script>
   import About from './components/About.svelte'
-
-  // <body> style must be added dynamically to index.html
-  // for Tailwind to pick it up
-  document.body.classList.add('bg-midnight')
 </script>
 
 <style>

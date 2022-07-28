@@ -9,7 +9,9 @@
 </picture>
 
 <div class="text-lg max-w-md space-y-4">
-  <h1 class="text-3xl sm:text-4xl font-bold text-coral">Hi! I'm Mohamed,</h1>
+  <h1 class="text-3xl sm:text-4xl font-cursive font-normal tracking-wide text-f-blue-100 pb-4">
+    Hi! I'm Mohamed,
+  </h1>
 
   <p>a Canadian living in the Netherlands.</p>
 
@@ -29,7 +31,7 @@
           target="_blank"
           rel="noreferrer noopener nofollow"
           class="
-            text-coral
+            text-f-blue-100
             hover:text-sky-50
             hover:underline
             focus:text-sky-50
