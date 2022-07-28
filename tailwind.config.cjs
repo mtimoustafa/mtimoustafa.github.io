@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: ['"Sansita Swashed"', 'cursive', ...defaultTheme.fontFamily.serif],
+        cursive: ['"Sansita Swashed"', ...defaultTheme.fontFamily.serif],
         sans: ['"Signika Negative"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
