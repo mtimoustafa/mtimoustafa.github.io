@@ -48,8 +48,10 @@
 
 <script>
   const places = [
-    { name: 'Polywork', link: 'https://www.polywork.com/fairewinds' },
     { name: 'Twitter', link: 'https://twitter.com/mtimoustafa' },
-    { name: 'Github', link: 'https://github.com/mtimoustafa' },
+    { name: 'GitHub', link: 'https://github.com/mtimoustafa' },
+    { name: 'Resume', link: 'http://resume.fairewinds.ca' },
+    { name: 'Polywork', link: 'https://www.polywork.com/fairewinds' },
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/mtimoustafa' },
   ]
 </script>
