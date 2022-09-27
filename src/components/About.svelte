@@ -50,7 +50,7 @@
   const places = [
     { name: 'Twitter', link: 'https://twitter.com/mtimoustafa' },
     { name: 'GitHub', link: 'https://github.com/mtimoustafa' },
-    { name: 'Resume', link: 'http://resume.fairewinds.ca' },
+    { name: 'Resume', link: 'https://resume.fairewinds.ca' },
     { name: 'Polywork', link: 'https://www.polywork.com/fairewinds' },
     { name: 'LinkedIn', link: 'https://www.linkedin.com/in/mtimoustafa' },
   ]
