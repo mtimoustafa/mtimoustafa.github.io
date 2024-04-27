@@ -4,7 +4,7 @@ export default [
   ...eslintPluginSvelte.configs['flat/recommended'],
   {
     rules: {
-      semi: 0,
+      semi: [ "error", "never" ],
     },
   }
 ];
