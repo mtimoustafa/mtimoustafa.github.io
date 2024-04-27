@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Ensure linting is passing
+yarn eslint $(git diff --cached --name-only | tr '\n' ' ')
