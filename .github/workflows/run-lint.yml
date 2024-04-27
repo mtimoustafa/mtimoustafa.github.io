@@ -1,0 +1,23 @@
+name: 'Run linter'
+on: [ push ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup environment
+        run: |
+          yarn
+
+      - name: Run yarn lint
+        run: |
+          yarn lint
+
