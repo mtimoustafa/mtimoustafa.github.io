@@ -15,13 +15,9 @@
 
   <p>a Canadian living in the Netherlands.</p>
 
-  <p>I work as a full-stack software developer, with a focus on building accessible and delightfully usable applications. At heart, I love tinkering and experimenting with things, and creating something that makes the world a better place.</p>
+  <p>I work as a full-stack software developer, with a focus on building accessible and delightfully usable applications. At heart, I love tinkering and experimenting with things, which you can find in the links below.</p>
 
-  <p>I also like to make music, cook wholesome things, and curate a little digital garden of interesting links from all over the internet.</p>
-
-  <p>
-    You can find me in the places below. Come say hi ☺️
-  </p>
+  <p>Occasionally, I make games and music. I also like to curate a little digital garden of interesting links from all over the internet. I'll put it here one day.</p>
 
   <ul class="list-disc list-inside">
     {#each places as place}
@@ -29,7 +25,7 @@
         <a
           href="{ place.link }"
           target="_blank"
-          rel="noreferrer noopener nofollow"
+          rel="noreferrer noopener nofollow { place.rel === 'me' ? 'me' : '' }"
           class="
             text-f-blue-100
             hover:text-sky-50
@@ -48,10 +44,11 @@
 
 <script>
   const places = [
-    { name: 'Twitter', link: 'https://twitter.com/mtimoustafa' },
-    { name: 'GitHub', link: 'https://github.com/mtimoustafa' },
     { name: 'Resume', link: 'https://resume.fairewinds.ca' },
-    { name: 'Polywork', link: 'https://www.polywork.com/fairewinds' },
     { name: 'LinkedIn', link: 'https://www.linkedin.com/in/mtimoustafa' },
+    { name: 'GitHub', link: 'https://github.com/mtimoustafa' },
+    { name: 'GitLab', link: 'https://gitlab.com/fairewinds' },
+    { name: 'Itch.io', link: 'https://fairewinds.itch.io' },
+    { name: 'Mastodon', link: 'https://mastodon.social/@fairewinds', rel: 'me' },
   ]
 </script>
