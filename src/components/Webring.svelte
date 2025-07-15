@@ -6,8 +6,8 @@
   <ul class="flex justify-between">
     <li>
       <a
-        href="https://zomers.online/"
         rel="external"
+        href="https://kokokoding.nl/"
         class="
           text-f-blue-100
           hover:text-sky-50
@@ -17,12 +17,12 @@
           active:text-slate-500
         "
       >
-        Previous &larr;
+        &larr; Previous
       </a>
     </li>
     <li>
       <a
-        href="https://kokokoding.nl/"
+        href="https://zomers.online/"
         rel="external"
         class="
           text-f-blue-100
