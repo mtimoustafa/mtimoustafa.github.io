@@ -40,9 +40,15 @@
       </li>
     {/each}
   </ul>
+
+  <div class="pt-4">
+    <Webring />
+  </div>
 </div>
 
 <script>
+  import Webring from './Webring.svelte'
+
   const places = [
     { name: 'Resume', link: 'https://resume.fairewinds.ca' },
     { name: 'LinkedIn', link: 'https://www.linkedin.com/in/mtimoustafa' },
