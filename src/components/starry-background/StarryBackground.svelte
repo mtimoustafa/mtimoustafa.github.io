@@ -16,9 +16,9 @@
   }
 
   const stars = [
-    ...generateStars(200, 1),
-    ...generateStars(100, 1.5),
-    ...generateStars(50, 2),
+    ...generateStars(200, 3),
+    ...generateStars(100, 5),
+    ...generateStars(50, 8),
   ]
 </script>
 

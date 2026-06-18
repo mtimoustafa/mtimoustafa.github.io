@@ -19,7 +19,10 @@
   .star {
     position: fixed;
     background: #fff;
-    border-radius: 50%;
+    clip-path: polygon(
+      50% 0%, 60% 35%, 100% 50%, 60% 65%,
+      50% 100%, 40% 65%, 0% 50%, 40% 35%
+    );
     pointer-events: none;
     animation: twinkle ease-in-out infinite;
   }
