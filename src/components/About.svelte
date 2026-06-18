@@ -28,8 +28,8 @@
           rel="noreferrer noopener nofollow { place.rel === 'me' ? 'me' : '' }"
           class="
             text-f-blue-100
+            underline underline-offset-4
             hover:text-sky-50
-            hover:underline
             focus:text-sky-50
             focus:underline
             active:text-slate-500
