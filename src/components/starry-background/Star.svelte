@@ -1,18 +1,17 @@
 <div
   class="star"
-  style="left: {x}px; top: {y}px; width: {size}px; height: {size}px; animation-duration: {duration}s; animation-delay: {delay}s;"
+  style="left: {x}px; top: {y}px; width: {size}px; height: {size}px; animation-duration: {duration}s; animation-delay: {offset}s;"
 ></div>
 
 <script>
   const MIN_DURATION = 4
   const MAX_DURATION = 8
-  const MAX_DELAY = 5
 
   export let x
   export let y
   export let size = 1
   export let duration = MIN_DURATION + Math.random() * (MAX_DURATION - MIN_DURATION)
-  export let delay = Math.random() * MAX_DELAY
+  export let offset = -Math.random() * MAX_DURATION
 </script>
 
 <style>
