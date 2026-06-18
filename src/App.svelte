@@ -1,3 +1,5 @@
+<StarryBackground />
+
 <main
   class="
     flex
@@ -29,6 +31,7 @@
 
 <script>
   import About from './components/About.svelte'
+  import StarryBackground from './components/starry-background/StarryBackground.svelte'
 </script>
 
 <style>
