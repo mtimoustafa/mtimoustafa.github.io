@@ -12,8 +12,9 @@ module.exports = {
         sans: ['"Signika Negative"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        'f-blue-50': '#f0f9ff',
         'f-blue-100': '#a8f9ff',
-        'f-blue-300': '#5cf4ff',
+        'f-blue-900': '#0a1a1b',
       },
     },
   },
