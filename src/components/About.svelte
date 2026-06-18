@@ -8,7 +8,7 @@
   />
 </picture>
 
-<div class="text-lg max-w-md space-y-4">
+<div class="text-lg max-w-md space-y-4 border border-f-blue-100/20 bg-f-blue-900/80 rounded-xl p-8">
   <h1 class="text-3xl sm:text-4xl font-cursive font-normal tracking-wide text-f-blue-100 pb-4">
     Hi! I'm Mohamed,
   </h1>
