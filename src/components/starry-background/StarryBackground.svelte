@@ -1,5 +1,5 @@
 <div class="starfield" aria-hidden="true">
-  {#each stars as star}
+  {#each stars as star, i (i)}
     <Star x={star.x} y={star.y} size={star.size} />
   {/each}
 </div>

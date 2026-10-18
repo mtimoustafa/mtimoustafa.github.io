@@ -20,7 +20,7 @@
   <p>Occasionally, I make games and music. I also like to curate a little digital garden of interesting links from all over the internet. I'll put it here one day.</p>
 
   <ul class="list-disc list-inside">
-    {#each places as place}
+    {#each places as place (place.link)}
       <li>
         <a
           href="{ place.link }"

@@ -1,6 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-cursive:
+    'Sansita Swashed', ui-serif, Georgia, Cambria, 'Times New Roman', Times,
+    serif;
+  --font-sans:
+    'Signika Negative', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --color-f-blue-50: #f0f9ff;
+  --color-f-blue-100: #a8f9ff;
+  --color-f-blue-900: #0a1a1b;
+}
 
 @font-face {
   font-family: 'Sansita Swashed';

@@ -33,7 +33,3 @@
   import About from './components/About.svelte'
   import StarryBackground from './components/starry-background/StarryBackground.svelte'
 </script>
-
-<style>
-  @import './main.css';
-</style>
