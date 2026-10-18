@@ -1,35 +1,22 @@
 <StarryBackground />
 
-<main
+<div
   class="
-    flex
-    flex-col
-    md:flex-row
-    justify-center
-    items-start
-
-    mx-auto
-    max-w-md
-    md:max-w-none
-
-    px-10
-    py-16
-    sm:py-20
-    md:py-24
-    lg:py-36
-
-    space-y-8
-    md:space-y-0
-    md:space-x-16
-
-    text-sky-50
-    font-light
+    mx-auto max-w-4xl
+    min-h-dvh
+    text-sky-50 font-light
+    border border-f-blue-100/20 bg-black/80
   "
 >
-  <About />
-</main>
+  <Header />
+
+  <main>
+    <About />
+  </main>
+</div>
 
 <script>
   import About from './components/About.svelte'
+  import Header from './components/Header.svelte'
   import StarryBackground from './components/starry-background/StarryBackground.svelte'
 </script>

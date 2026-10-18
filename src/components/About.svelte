@@ -1,19 +1,5 @@
-<picture class="md:max-w-xs">
-  <source srcset="/landscape_pfp.jpg" media="(max-width:767px)" />
-  <source srcset="/portrait_pfp.jpg" media="(min-width:1024px)" />
-  <img
-    src="/square_pfp.jpg"
-    alt="Mohamed standing in a park, smiling"
-    class="rounded-xl"
-  />
-</picture>
-
-<div class="text-lg max-w-md space-y-4 border border-f-blue-100/20 bg-f-blue-900/80 rounded-xl p-8">
-  <h1 class="text-3xl sm:text-4xl font-cursive font-normal tracking-wide text-f-blue-100 pb-4">
-    Hi! I'm Mohamed,
-  </h1>
-
-  <p>a Canadian living in the Netherlands.</p>
+<div class="px-16">
+  <p>Hi! I'm Mohamed, a Canadian living in the Netherlands.</p>
 
   <p>I work as a full-stack software developer, with a focus on building accessible and delightfully usable applications. At heart, I love tinkering and experimenting with things, which you can find in the links below.</p>
 
