@@ -8,6 +8,8 @@
   <ul class="list-disc list-inside">
     {#each places as place (place.link)}
       <li>
+        <!-- External links only, so resolve() doesn't apply -->
+        <!-- eslint-disable svelte/no-navigation-without-resolve -->
         <a
           href="{ place.link }"
           target="_blank"
@@ -23,6 +25,7 @@
         >
           { place.name }
         </a>
+        <!-- eslint-enable svelte/no-navigation-without-resolve -->
       </li>
     {/each}
   </ul>

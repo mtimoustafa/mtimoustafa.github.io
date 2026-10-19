@@ -5,6 +5,7 @@
 </div>
 
 <script>
+  import { onMount } from 'svelte'
   import Star from './Star.svelte'
 
   function generateStars(count, size) {
@@ -15,11 +16,16 @@
     }))
   }
 
-  const stars = [
-    ...generateStars(200, 3),
-    ...generateStars(100, 5),
-    ...generateStars(50, 8),
-  ]
+  let stars = []
+
+  // Needs `window`, so generate in the browser rather than during prerender
+  onMount(() => {
+    stars = [
+      ...generateStars(200, 3),
+      ...generateStars(100, 5),
+      ...generateStars(50, 8),
+    ]
+  })
 </script>
 
 <style>
