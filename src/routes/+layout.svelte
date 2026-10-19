@@ -2,7 +2,7 @@
 
 <div
   class="
-    mx-auto max-w-4xl
+    mx-auto max-w-7xl
     min-h-dvh
     text-sky-50 font-light
     border border-f-blue-100/20 bg-black/80
