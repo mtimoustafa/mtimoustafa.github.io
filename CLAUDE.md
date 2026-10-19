@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Personal website at [fairewinds.ca](https://fairewinds.ca). Built with Svelte 4 + Vite, styled with Tailwind CSS, and deployed as a static site to GitHub Pages via GitHub Actions on every push to `main`.
+Personal website at [fairewinds.ca](https://fairewinds.ca). Built with SvelteKit (Svelte 5) + Vite, styled with Tailwind CSS 4, and deployed as a static site to GitHub Pages via GitHub Actions on every push to `main`.
 
 ## Commands
 
@@ -19,18 +19,20 @@ Linting runs automatically as a pre-commit hook (`.githooks/pre-commit`). ESLint
 
 ## Architecture
 
-This is a single-page Svelte app with no routing — everything renders from one entrypoint:
+A SvelteKit app using file-based routing in `src/routes/`, prerendered to static HTML by `adapter-static` (`export const prerender = true` in `+layout.js`). SvelteKit options are passed to the `sveltekit()` plugin in `vite.config.js`; there is no `svelte.config.js`.
 
-- `src/main.js` mounts `App.svelte` into `#app`
-- `src/App.svelte` provides the page layout shell and imports `src/main.css`
-- `src/components/About.svelte` contains all page content (bio text, links list)
+- `src/app.html` is the HTML template
+- `src/routes/+layout.svelte` provides the page layout shell and imports `src/main.css`
+- `src/routes/+page.svelte` is the home page (`src/components/About.svelte`: bio text, links list)
+- `src/routes/software/+page.svelte` is the software page
+- `src/components/Header.svelte` renders the logo and nav; internal links go through `resolve()` from `$app/paths`
 - `src/components/Webring.svelte` renders the Andromesh Webring footer nav
 
-`src/main.css` imports Tailwind and declares the two self-hosted variable fonts (`SansitaSwashed`, `SignikaNegative`) from `public/`.
+`src/main.css` imports Tailwind and declares the two self-hosted variable fonts (`SansitaSwashed`, `SignikaNegative`) from `static/`.
 
 ## Tailwind customizations
 
-Custom values defined in `tailwind.config.cjs`:
+Custom values defined in the `@theme` block of `src/main.css`:
 
 - `font-cursive` → `"Sansita Swashed"` (used for the `<h1>`)
 - `font-sans` → `"Signika Negative"` (body font)
